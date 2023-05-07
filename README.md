@@ -1,14 +1,6 @@
 # Todo Task Project using GraphQL
 
-<<<<<<< HEAD
-
-## Overview
-
-# This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API.
-
 This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API.
-
-> > > > > > > 7f33eff05f25afaa97e992b3d08ad2e8d635dd19
 
 ## Requirements
 
@@ -21,7 +13,7 @@ To complete this project, you will need the following tools and technologies:
 
 ## Overview
 
-The assignment for this project is to create a backend API that allows users to manage their Todo tasks using GraphQL. The API should be able to handle the following requests:
+The project is a backend API that allows users to manage their Todo tasks using GraphQL. The API should be able to handle the following requests:
 
 - Create a new Todo task
 - Retrieve a list of Todo tasks
