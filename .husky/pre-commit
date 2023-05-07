@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run test
+npm run format
+npm run lint
+npx cspell src/* -c ./cspell.json

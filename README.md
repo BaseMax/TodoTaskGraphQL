@@ -29,7 +29,6 @@ The data for the Todo tasks should be stored in a MongoDB or any other database 
 
 ...
 
-
 ## Getting Started
 
 To get started with the project, follow these steps:
