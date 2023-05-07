@@ -2,16 +2,15 @@
 
 ## Overview
 
-This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API. This project is built using the NestJS framework for the backend and GraphQL for the API.
+This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API. 
 
 ## Requirements
 
 To complete this project, you will need the following tools and technologies:
 
 - Node.js
-- NestJS
 - GraphQL
-- MongoDB or any other database of your choice.
+- Sqlite or any other database of your choice.
 
 ## Assignment
 
@@ -23,7 +22,7 @@ The assignment for this project is to create a backend API that allows users to 
 - Update an existing Todo task
 - Delete an existing Todo task
 
-The data for the Todo tasks should be stored in a MongoDB or any other database of your choice. You should also create a set of tests to ensure that the API is functioning correctly.
+The data for the Todo tasks should be stored in a Sqlite or any other database of your choice. You should also create a set of tests to ensure that the API is functioning correctly.
 
 ## Project Structure
 
@@ -64,7 +63,24 @@ The GraphQL schema should include the following queries:
 
 - todos: This query returns a list of all Todo tasks.
 - todo: This query returns a single Todo task with the provided ID.
-
+## Scripts 
+you can run the following scripts using 
+```sh
+npm run <script-name>
+```
+| name        | description                            | script under the hood                                              |
+| ----------- | -------------------------------------- | ------------------------------------------------------------------ |
+| test        | run tests                              | `jest `                                                            |
+| test:cov    | run tests with coverage                | `jest --coverage `                                                 |
+| build       | compile typescript                     | `tsc `                                                             |
+| lint        | run linter                             | `eslint . `                                                        |
+| format      | format code                            | `prettier . --write `                                              |
+| fmt         | alias for format                       | `npm run format `                                                  |
+| lint-fmt    | lint and foramt at the same time       | `npm run lint && npm run fmt `                                     |
+| build:watch | build and watch for cahnges            | `tsc --watch `                                                     |
+| start       | start (useful for servers)             | `node dist/index.js --enable-source-maps `                         |
+| start:dev   | start in development mode (watch mode) | `concurrently \"nodemon dist/index.js\" \"npm run build:watch\"" ` |
+| prepare     | husky prepare                          | `husky install `                                                   |
 ## Testing
 
 To run the tests for the project, run the following command:
