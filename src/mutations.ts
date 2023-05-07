@@ -1,8 +1,7 @@
 import { Todo } from "@prisma/client";
 import prisma from "./prisma";
-import * as z from 'zod';
+import * as z from "zod";
 import { TodoNotFoundError } from "./errors";
-
 
 const titleValidator = z.string().max(100);
 const descriptionValidator = z.string().max(500);
@@ -45,7 +44,7 @@ export async function updateTodo(
   const validInput = updateTodoInputSchema.parse(input);
   const prev = await prisma.todo.findUnique({ where: { id: validInput.id } });
   if (!prev) {
-    throw new TodoNotFoundError(validInput.id)
+    throw new TodoNotFoundError(validInput.id);
   }
   const result = await prisma.todo.update({
     where: { id: validInput.id },
@@ -62,7 +61,7 @@ export async function deleteTodo(
 ): Promise<string> {
   const todo = await prisma.todo.findUnique({ where: { id } });
   if (!todo) {
-    throw new TodoNotFoundError(id)
+    throw new TodoNotFoundError(id);
   }
   await prisma.todo.delete({ where: { id } });
   return todo.id;

@@ -2,11 +2,11 @@ import { GraphQLError } from "graphql";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 
-export class BaseError extends Error { }
+export class BaseError extends Error {}
 
 export class TodoNotFoundError extends BaseError {
   constructor(public id: string) {
-    super()
+    super();
   }
 }
 // open for extending with new error types and checking against BaseError
@@ -24,12 +24,12 @@ export function mapError(fn: any) {
         throw new GraphQLError("validation failed", {
           extensions: {
             code: "BAD_USER_INPUT",
-            error: fromZodError(e)
-          }
-        })
+            error: fromZodError(e),
+          },
+        });
       } else {
         throw e;
       }
     }
-  }
+  };
 }
