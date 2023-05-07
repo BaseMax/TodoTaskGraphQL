@@ -23,8 +23,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "test": "jest",
-    "test:cov": "jest --coverage",
+    "test": "DATABASE_URL=file:test.db jest",
+    "test:cov": "DATABASE_URL=file:test.db jest --coverage",
     "build": "tsc",
     "lint": "eslint .",
     "format": "prettier . --write",
