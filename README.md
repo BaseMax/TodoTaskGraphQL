@@ -76,6 +76,11 @@ npm run <script-name>
 | start       | start (useful for servers)             | `node dist/index.js --enable-source-maps `                         |
 | start:dev   | start in development mode (watch mode) | `concurrently \"nodemon dist/index.js\" \"npm run build:watch\"" ` |
 | prepare     | husky prepare                          | `husky install `                                                   |
+
+## Demo
+
+![Todo Task Project using GraphQL](https://user-images.githubusercontent.com/2658040/236685299-178fa7dd-620e-4501-a864-07415a48dc99.png)
+
 ## Testing
 
 To run the tests for the project, run the following command:
