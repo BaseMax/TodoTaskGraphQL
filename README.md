@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API. 
+This project is a Todo task manager that uses GraphQL instead of JSON for its data structure. The project allows users to create, read, update and delete tasks using the GraphQL API.
 
 ## Requirements
 
@@ -63,11 +63,15 @@ The GraphQL schema should include the following queries:
 
 - todos: This query returns a list of all Todo tasks.
 - todo: This query returns a single Todo task with the provided ID.
-## Scripts 
-you can run the following scripts using 
+
+## Scripts
+
+you can run the following scripts using
+
 ```sh
 npm run <script-name>
 ```
+
 | name        | description                            | script under the hood                                              |
 | ----------- | -------------------------------------- | ------------------------------------------------------------------ |
 | test        | run tests                              | `jest `                                                            |
@@ -81,6 +85,7 @@ npm run <script-name>
 | start       | start (useful for servers)             | `node dist/index.js --enable-source-maps `                         |
 | start:dev   | start in development mode (watch mode) | `concurrently \"nodemon dist/index.js\" \"npm run build:watch\"" ` |
 | prepare     | husky prepare                          | `husky install `                                                   |
+
 ## Testing
 
 To run the tests for the project, run the following command:
