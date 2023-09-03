@@ -36,7 +36,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@apollo/server": "^4.7.4",
+    "@apollo/server": "^4.9.3",
     "@prisma/client": "4.13.0",
     "graphql": "^16.6.0",
     "prisma": "^4.13.0",
